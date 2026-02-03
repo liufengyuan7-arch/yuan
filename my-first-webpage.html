@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- 这是网页的"头部"，设置网页的基本信息 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘丰元</title>
+    
+    <!-- 这是 CSS 样式，控制网页的外观 -->
+    <style>
+        /* 整体样式 */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        /* 容器样式 */
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        /* 标题样式 */
+        h1 {
+            color: #333;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        
+        /* 段落样式 */
+        p {
+            line-height: 1.8;
+            color: #555;
+            font-size: 16px;
+            margin: 15px 0;
+        }
+        
+        /* 按钮样式 */
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px 5px;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        /* 链接样式 */
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* 列表样式 */
+        ul {
+            line-height: 2;
+            color: #555;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        /* 图片样式 */
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        
+        /* 输入框样式 */
+        input {
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 200px;
+            margin: 10px 0;
+        }
+        
+        input:focus {
+            border-color: #667eea;
+            outline: none;
+        }
+        
+        /* 特殊区域样式 */
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+        
+        .button-group {
+            text-align: center;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 这是网页的主要内容 -->
+    <div class="container">
+        <!-- 大标题 -->
+        <h1>🌟 今天天气真好</h1>
+        
+        <!-- 段落 -->
+        <p>my bro 玩双色球 玩菠菜赛马打快三bro</p>
+        <!-- 💡 提示：你可以修改上面的标题和这段文字，改成你想说的话！ -->
+        <p>戴劳力士 吃快餐开香堂和手足们拜山头</p>
+        
+        <!-- 小标题 -->
+        <h2>📝 今日代办事项</h2>
+        
+        <!-- 更多段落 -->
+        <p>玩的是荣华富贵和气生财 不是六臂和三头</p>
+        
+        <!-- 列表 -->
+        <h1> 我的爱好</h1>
+        <ul>
+            <li>拿3条A</li>
+            <li>通杀牌</li>
+            <li>打东南西北</li>
+            <li>中发白</li>
+        </ul>
+        
+        <!-- 特殊区域 -->
+        <div class="highlight">
+            <p><strong>💡 提示：</strong>你可以修改上面的列表，添加你自己的爱好！</p>
+        </div>
+        
+        <!-- 按钮区域 -->
+        <div class="button-group">
+            <h2>🎮 试试这些按钮</h2>
+            <button onclick="sayHello()">点击我打招呼</button>
+            <button onclick="changeColor()">点击我改变颜色</button>
+            <button onclick="showMessage()">点击我看消息</button>
+        </div>
+        
+        <!-- 输入框 -->
+        <h2>✍️ 输入你的名字</h2>
+        <input type="text" id="nameInput" placeholder="在这里输入你的名字">
+        <button onclick="greetUser()">打招呼</button>
+        <p id="greeting"></p>
+        
+        <!-- 链接 -->
+        <h2>🔗 有用的链接</h2>
+        <p>
+            想学习更多？可以访问：
+            <a href="https://www.runoob.com" target="_blank">菜鸟教程</a>
+            或
+            <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+        </p>
+        
+        <!-- 图片部分 -->
+        <h2>🖼️ 图片</h2>
+        
+        <!-- 方法1：使用网络图片（最简单） -->
+        <!-- 把下面的链接替换成你想显示的图片链接 -->
+        <!-- 如何获取图片链接：右键点击网上的图片 → 选择"复制图片地址" -->
+        <!-- ⚠️ 注意：file:///private/... 这种路径只能你自己电脑看到，分享/上线后别人看不到 -->
+        <!-- ✅ 推荐：把图片放到和本 HTML 同一个文件夹，然后写成 src="my-pic.png" 这种“文件名” -->
+        <img src="my-pic.png" alt="我的图片" style="width: 100%; max-width: 320px; margin: 30px auto; display: block;">
+        
+        <!-- 
+        方法2：使用本地图片
+        1. 把你的图片文件（比如 photo.jpg）放在和这个 HTML 文件同一个文件夹里
+        2. 然后把上面的 src 改成：src="photo.jpg"
+        3. 比如：<img src="photo.jpg" alt="我的照片">
+        -->
+        
+        <p style="text-align: center; color: #666; font-size: 14px; margin-top: 10px;">
+            💡 提示：要换图片，把上面的链接改成你的图片地址就可以了！
+        </p>
+    </div>
+    
+    <!-- 这是 JavaScript 代码，让网页有交互功能 -->
+    <script>
+        // 函数1：打招呼
+        function sayHello() {
+            alert("早上好，老师，今天天气真好～");
+            console.log("用户点击了打招呼按钮");
+        }
+        
+        // 函数2：改变颜色
+        function changeColor() {
+            // 随机生成一个颜色
+            const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#f9ca24', '#6c5ce7'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            
+            // 改变网页背景颜色
+            document.body.style.background = randomColor;
+            console.log("背景颜色已改变为：", randomColor);
+        }
+        
+        // 函数3：显示消息
+        function showMessage() {
+            const messages = [
+                "荣华富贵和气生财！",
+                "新加坡到马来西亚屌到上海外滩bro",
+                "带黑墨镜配小平头",
+                "带漂亮妹妹打保龄球"
+            ];
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            alert(randomMessage);
+            console.log("显示消息：", randomMessage);
+        }
+        
+        // 函数4：根据输入的名字打招呼
+        function greetUser() {
+            const name = document.getElementById('nameInput').value;
+            const greetingElement = document.getElementById('greeting');
+            
+            if (name) {
+                greetingElement.textContent = "你好，" + name + "！很高兴认识你！";
+                greetingElement.style.color = "#4CAF50";
+                greetingElement.style.fontSize = "20px";
+                greetingElement.style.fontWeight = "bold";
+                console.log("向用户打招呼：", name);
+            } else {
+                greetingElement.textContent = "请先输入你的名字！";
+                greetingElement.style.color = "#ff6b6b";
+            }
+        }
+        
+        // 页面加载完成时的提示
+        console.log("🎉 网页加载完成！");
+        console.log("💡 提示：按 F12 打开控制台，可以看到这些信息");
+    </script>
+</body>
+</html>
